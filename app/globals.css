@@ -2,32 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body  {
+  background-color: #E8D8C4;
+  color: #561C24;
+  font-family: system-ui;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+h1 {
+  font-size: 32px;
+}
+
+#landing-page-title {
+  text-align: center;
+}
+
+
+#pour-over {
+  display:block;
+  margin:auto;
+}
+
+#description-container {
+  max-width: 640px;
+  display:block;
+  margin:auto;
+}
+
+p {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+
+@media (max-width: 640px) {
+  #description-container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+input {
+  /* Remove all borders */
+  border: none;
+
+  /* Remove default padding */
+  padding: 0;
+
+  /* Remove default margin */
+  margin: 0;
+
+  /* Reset background color */
+  background-color: white;
+
+  /* Reset font styles */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+
+  /* Reset any other styles */
+  /* Add more properties as needed */
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+input[type=text]{
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#email-signup {
+  input[type=text]{
+    height: 40px;
+    width: 200px;
+    padding-left: 4px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  input[type=submit] {
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 40px;
+    background-color: #6D2932;
+    color: white;
+    position: relative;
+    left: -4px;
+    top: 1px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;
   }
 }
+
