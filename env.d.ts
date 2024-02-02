@@ -5,7 +5,7 @@ declare global {
       // (for more details on Bindings see: https://developers.cloudflare.com/pages/functions/bindings/)
       //
       // KV Example:
-      // MY_KV: KVNamespace
+      COFFEE_LIST_DB: D1Namespace
     }
   }
 }

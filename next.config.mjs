@@ -13,10 +13,9 @@ if (process.env.NODE_ENV === 'development') {
         // for more details on Bindings see: https://developers.cloudflare.com/pages/functions/bindings/)
         //
         // KV Example:
-        // MY_KV: {
-        //   type: 'kv',
-        //   id: 'xxx',
-        // }
+      d1Databases: {
+        "COFFEE_LIST_DB": "c0f6fd95-c4f7-4af1-98af-eb3e7db76795"
+      }
     }
   });
 }

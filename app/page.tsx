@@ -2,19 +2,18 @@ import Image from "next/image"
 
 export default function Home() {
 
-  async function submit(formData: FormData) {
+  async function submit(context: any) {
     'use server'
-    console.log(formData, "submitted")
-    console.log(formData.get("email"))
+    console.log(context);
   }
   return (
     <>
       <h1 id="landing-page-title"> Coffee List NYC </h1>
       <Image
-        src="/pourover.svg"
+        src="/dhh.jpeg"
         id="pour-over"
-        width={500}
-        height={500}
+        width={200}
+        height={200}
         alt="Pour over coffee drawing"
       />
       <div id="description-container"> 
